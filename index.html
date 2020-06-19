@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title> Search for CEP</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    </head>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+  <div class="form-inline">
+    <input id="CEP" class="form-control mr-sm-2" type="search" placeholder="Consult CEP" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="consultCep()">Consult</button>
+  </div>
+  
+</nav>
+ <div class="container cep">
+     <div class = "row">
+         <h3 id="titlecep"> CEP </h3>
+     
+    <table class="table table-dark">
+
+  <tbody>
+    <tr>
+      <td>Street</td>
+      <td id="logradouro"></td>
+      <td> <button onclick="ClipBoard()">Copiar</button> </td>
+    </tr>
+    <tr>
+      <td>Neighborhood</td>
+      <td id="bairro"></td>
+    </tr>
+    <tr>
+      <td>City</td>
+      <td id="localidade"></td>
+    </tr>
+    <tr>
+      <td>State</td>
+      <td id="uf"></td>
+    
+    </tr>      
+  </tbody>
+</table>
+    
+    </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+</body>
+
+</html>
